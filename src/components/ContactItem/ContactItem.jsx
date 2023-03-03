@@ -2,15 +2,16 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 import { deleteContact } from 'redux/operations';
-import { Button, Item } from './ContactItem.styled';
+import { Button, Item, ItemName, ItemNumber } from './ContactItem.styled';
 
 const ContactItem = ({ data }) => {
   const dispatch = useDispatch();
-  const { id, name, phone } = data;
+  const { id, name, number } = data;
   return (
     <>
       <Item key={id}>
-        {name}: {phone}
+        <ItemName>{name}: </ItemName>
+        <ItemNumber>{number}</ItemNumber>
         <Button type="button" onClick={() => dispatch(deleteContact(id))}>
           Delete
         </Button>

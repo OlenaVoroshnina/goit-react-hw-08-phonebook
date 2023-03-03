@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Button = styled.button`
   display: inline-block;
@@ -11,18 +11,24 @@ export const Button = styled.button`
   background-color: #4503fa;
   border: 2px solid white;
   cursor: pointer;
-`
+`;
 
 export const Item = styled.li`
   display: flex;
   align-items: center;
-  justify-content: space-between;  
-`
+  justify-content: space-between;
+`;
+export const ItemName = styled.li`
+  width: 250px;
+`;
+export const ItemNumber = styled.li`
+  width: 150px;
+`;
 export const List = styled.ul`
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    width: 630px;
-    font-size: 30px;
-    list-style-type: none;
-`
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 630px;
+  font-size: 30px;
+  list-style-type: none;
+`;

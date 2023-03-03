@@ -14,7 +14,6 @@ export default function ContactForm() {
 
   const handleChange = e => {
     const { name, value } = e.currentTarget;
-
     switch (name) {
       case 'name':
         setName(value);
@@ -29,17 +28,15 @@ export default function ContactForm() {
 
   const handleSubmit = e => {
     e.preventDefault();
-
     const name = e.target.elements.name.value;
-    const phone = e.target.elements.number.value;
+    const number = e.target.elements.number.value;
 
     if (contacts.find(contact => contact.name === name)) {
       alert(`${name} is already in contacts.`);
       reset();
       return;
-    }
-
-    dispatch(addContact({ name, phone }));
+    };
+    dispatch(addContact({ name, number }));
     reset();
   };
 

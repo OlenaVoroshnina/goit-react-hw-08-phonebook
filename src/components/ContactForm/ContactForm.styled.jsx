@@ -1,13 +1,14 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Form = styled.form`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 500px;
-    border: 1px solid black;
-    padding: 15px;
-`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  border: 1px solid #4503fa;
+  padding: 15px;
+  margin-bottom: 20px;
+`;
 
 export const Button = styled.button`
   display: inline-block;
@@ -20,14 +21,15 @@ export const Button = styled.button`
   background-color: #c003fa;
   border: 2px solid white;
   cursor: pointer;
-`
+`;
 export const Label = styled.label`
   margin-bottom: 20px;
   color: #c003fa;
-`
+`;
 export const Input = styled.input`
-  width: 150px;
+  width: 250px;
   height: 30px;
-  margin-bottom: 10px;
-  outline-color: #c003fa; 
-`
+  margin-bottom: 15px;
+  border: 1px solid #4503fa;
+  outline-color: #c003fa;
+`;
